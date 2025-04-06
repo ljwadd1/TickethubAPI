@@ -62,23 +62,3 @@ namespace TickethubAPI
     }
 }
 
-
-
-// ---
-// payload schema
-
-//{
-//    "concertId": 0,
-//  "email": "string",
-//  "name": "string",
-//  "phone": "string",
-//  "quantity": 0,
-//  "creditCard": "string",
-//  "expiration": "string",
-//  "securityCode": "string",
-//  "address": "string",
-//  "city": "string",
-//  "province": "string",
-//  "postalCode": "string",
-//  "country": "string"
-//}
