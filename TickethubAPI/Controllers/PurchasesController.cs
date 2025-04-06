@@ -23,7 +23,7 @@ namespace TickethubAPI.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok("Purchase Controller GET()");
+            return Ok("Purchases Controller GET()");
         }
 
         // Receive data from client
@@ -59,43 +59,8 @@ namespace TickethubAPI.Controllers
 
 
             // Return a response for valid request
-            return Ok("Hello " + purchase.Name + ". Purchase added to Azure queue.");
+            return Ok("Hello " + purchase.Name + ". Purchase added to Azure Tickethub queue.");
         }
 
     }
 }
-
-
-
-
-
-
-
-
-// --- Old validation
-//if(purchase == null)
-//{
-//    return BadRequest("Purchase object is null");
-//}
-
-//if (string.IsNullOrEmpty(purchase.Name))
-//{
-//    return BadRequest("Name is required");
-//}
-// ---
-
-
-
-
-// Suggested by copilot
-//[HttpPost]
-//public IActionResult Post([FromBody] string value)
-//{
-//    if (string.IsNullOrEmpty(value))
-//    {
-//        return BadRequest("Value cannot be null or empty");
-//    }
-//    // Process the purchase logic here
-//    _logger.LogInformation($"Purchase request received with value: {value}");
-//    return Ok($"Purchase request processed with value: {value}");
-//}
