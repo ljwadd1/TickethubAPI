@@ -9,12 +9,12 @@ namespace TickethubAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PurchaseController : ControllerBase
+    public class PurchasesController : ControllerBase
     {
-        private readonly ILogger<PurchaseController> _logger;
+        private readonly ILogger<PurchasesController> _logger;
         private readonly IConfiguration _configuration;
 
-        public PurchaseController(ILogger<PurchaseController> logger, IConfiguration configuration)
+        public PurchasesController(ILogger<PurchasesController> logger, IConfiguration configuration)
         {
             _logger = logger;
             _configuration = configuration;
